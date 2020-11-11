@@ -2,7 +2,7 @@
 """
 
 def get_dovidnyk():
-    """ Повертає вміст файла "move_means.txt" у вигляді списка
+    """ Повертає вміст файла "dovidnyk.txt" у вигляді списка
     Returns:
         move_mean_list - список рядків файла
     """
@@ -25,7 +25,7 @@ def get_dovidnyk():
 def show_dovidnyks(dovidnyks):
     """ Виводить список руху основних засобів
     Args:
-        move_means (list): список руху основних засобів
+        dovidnyk (list): список руху основних засобів
     """
 
     # Задати інтервал виводу
