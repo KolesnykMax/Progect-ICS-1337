@@ -4,7 +4,7 @@
 def get_dovidnyk():
     """ Повертає вміст файла "dovidnyk.txt" у вигляді списка
     Returns:
-        move_mean_list - список рядків файла
+        dovidnyk_list - список рядків файла
     """
 
     with open('./data/dovidnyk.txt', encoding="utf8") as dovidnyk_file:
@@ -23,9 +23,9 @@ def get_dovidnyk():
 
 
 def show_dovidnyks(dovidnyks):
-    """ Виводить список руху основних засобів
+    """ Виводить список товару
     Args:
-        dovidnyk (list): список руху основних засобів
+        dovidnyk (list): список товару
     """
 
     # Задати інтервал виводу
@@ -70,21 +70,21 @@ def get_tovaroobig():
 
 
 def show_tovaroobigs(tovaroobigs):
-    """ Виводить список довідника
+    """ Виводить список товарообігу
     Args:
-        tovaroobigs (list): список довідника
+        tovaroobigs (list): список товара
     """
 
     # Задати інтервал виводу
-    tovaroobig_code_from = input("З якого кода довідника виводити?")
-    tovaroobig_code_to = input("По який код довідника виводити?")
+    tovaroobig_code_from = input("З якого кода товарообігу виводити?")
+    tovaroobig_code_to = input("По який код товарообігу виводити?")
 
     # Накопичує кількість виведених рядків
     kol_lines = 0
 
     for tovaroobig in tovaroobigs:
         if tovaroobig_code_from <= tovaroobig[0] <= tovaroobig_code_to:
-            print("Код: {:6} Вид: {:6} Код: {:6} Вид: {:6}".format(tovaroobig[0], tovaroobig[1], tovaroobig[2], tovaroobig[3]))
+            print("Код: {:6} План: {:6} Очікуєме виконання: {:6} Рік: {:6}".format(tovaroobig[0], tovaroobig[1], tovaroobig[2], tovaroobig[3]))
             kol_lines += 1
 
     # Перевірити чи був вивід хочаб одного рядка
