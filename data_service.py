@@ -40,9 +40,9 @@ def show_dovidnyks(dovidnyks):
             print("Код: {:6} Товар: {:17} Знижка: {:5}".format(dovidnyk[0], dovidnyk[1], dovidnyk[2]))
             kol_lines += 1
 
-    # Перевірити чи був вивід хочаб одного рядка
+    # Перевірити щоб був вивід хочаб одного рядка
     if kol_lines == 0:
-        print("По Вашому запиту товару нічого не знайдено.")
+        print("По Вашому запиту товару не знайдено.")
 
 
 # dovidnyks = get_dovidnyk()
@@ -87,7 +87,7 @@ def show_tovaroobigs(tovaroobigs):
             print("Код: {:6} План: {:6} Очікуєме виконання: {:6} Рік: {:6}".format(tovaroobig[0], tovaroobig[1], tovaroobig[2], tovaroobig[3]))
             kol_lines += 1
 
-    # Перевірити чи був вивід хочаб одного рядка
+    # Перевірити щоб був вивід хочаб одного рядка
     if kol_lines == 0:
         print("По Вашому запиту товарообігу нічого не знайдено.")
 

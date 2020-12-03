@@ -1,4 +1,4 @@
-"""формування заявок на валового доходу по магазину
+"""формування заявок на розрахунок валового доходу по магазину
 """
 # підключити функції з модуля `data_service`
 from data_service import get_tovaroobig, get_dovidnyk
@@ -33,7 +33,7 @@ def dohid_val():
             if dovidnyk[0] == dovidnyk_code:
                 return dovidnyk[1]
 
-        return "*** Код засобу не знайдений"
+        return "*** Код не знайдений"
     
     def get_dovidnyk_znijka(dovidnyk_znijka):
         """ Повертає скидку товару по його коду
@@ -47,7 +47,7 @@ def dohid_val():
             if dovidnyk[0] == dovidnyk_znijka:
                 return dovidnyk[2]
 
-        return "*** Код засобу не знайдений"
+        return "*** Код не знайдений"
 
     # Накопичувач валового доходу універмагу
     dohid_list = []
