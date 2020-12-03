@@ -10,7 +10,7 @@ def get_dovidnyk():
     with open('./data/dovidnyk.txt', encoding="utf8") as dovidnyk_file:
         dovidnyk_list = dovidnyk_file.readlines()
 
-    # Накопичувач руху основних засобів
+    # Накопичувач товару
     dovidnyk_drive = []
 
     for line in dovidnyk_list:
@@ -45,8 +45,8 @@ def show_dovidnyks(dovidnyks):
         print("По Вашому запиту товару нічого не знайдено.")
 
 
-dovidnyks = get_dovidnyk()
-show_dovidnyks(dovidnyks)
+# dovidnyks = get_dovidnyk()
+# show_dovidnyks(dovidnyks)
 
 def get_tovaroobig():
     """ Повертає вміст файла "tovaroobigs.txt" у вигляді списка
@@ -57,7 +57,7 @@ def get_tovaroobig():
     with open('./data/tovaroobig.txt') as tovaroobig_file:
         tovaroobig_list = tovaroobig_file.readlines()
 
-    # Накопичувач довідника основних засобів
+    # Накопичувач товарообігу 
     tovaroobig_drive = []
 
     for line in tovaroobig_list:
@@ -92,5 +92,5 @@ def show_tovaroobigs(tovaroobigs):
         print("По Вашому запиту товарообігу нічого не знайдено.")
 
 
-tovaroobigs = get_tovaroobig()
-show_tovaroobigs(tovaroobigs)
+# tovaroobigs = get_tovaroobig()
+# show_tovaroobigs(tovaroobigs)
